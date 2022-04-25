@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "build": "tailwindcss -i ./src/main.css -o ./assets/css/main.css -w",
+    "start": "nodemon --watch src --exec \"npm run build\""
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "nodemon": "^2.0.15",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not IE 11",
+    "maintained node versions"
+  ]
+}
