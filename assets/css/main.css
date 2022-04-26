@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Sora:wght@200;300;400&display=swap');
+
 /*
 ! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 */
@@ -430,7 +432,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -475,7 +477,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.container {
+.container{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -483,50 +485,197 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 16px;
 }
 
-@media (min-width: 540px) {
-  .container {
+@media (min-width: 540px){
+  .container{
     max-width: 540px;
   }
 }
 
-@media (min-width: 720px) {
-  .container {
+@media (min-width: 720px){
+  .container{
     max-width: 720px;
   }
 }
 
-@media (min-width: 960px) {
-  .container {
+@media (min-width: 960px){
+  .container{
     max-width: 960px;
   }
 }
 
-@media (min-width: 1140px) {
-  .container {
+@media (min-width: 1140px){
+  .container{
     max-width: 1140px;
   }
 }
 
-@media (min-width: 1320px) {
-  .container {
+@media (min-width: 1320px){
+  .container{
     max-width: 1320px;
   }
 }
 
-.flex {
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.inset-y-0{
+  top: 0px;
+  bottom: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.block{
+  display: block;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.flex{
   display: flex;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.hidden{
+  display: none;
 }
 
-.font-bold {
-  font-weight: 700;
+.h-16{
+  height: 4rem;
 }
 
-.text-purple-400 {
-  --tw-text-opacity: 1;
-  color: rgb(192 132 252 / var(--tw-text-opacity));
+.h-8{
+  height: 2rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
+.flex-shrink-0{
+  flex-shrink: 0;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
+.border-\[\#836ee6\]\/\[\.40\]{
+  border-color: rgb(131 110 230 / .40);
+}
+
+.bg-transparent{
+  background-color: transparent;
+}
+
+.bg-slate-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+.bg-orange-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
+
+.bg-lime-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+}
+
+@media (min-width: 540px){
+  .sm\:items-stretch{
+    align-items: stretch;
+  }
+
+  .sm\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .sm\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 960px){
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
