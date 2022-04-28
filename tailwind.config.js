@@ -24,6 +24,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        purple: '#836ee6'
       },
       boxShadow: {
         input: "0px 7px 20px rgba(0, 0, 0, 0.03)",

@@ -4,6 +4,61 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+::before,
+::after {
+  font-family: 'Inter', sans-serif;
+  font-size: 13.3333px;
+  font-weight: 200;
+  line-height: 2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  line-height: 1.375em;
+}
+
+h1 {
+  font-size: 2.375em;
+  letter-spacing: -0.0875rem;
+}
+
+h2 {
+  font-size: 2.75em;
+  line-height: 1.25em;
+  letter-spacing: -0.0875rem;
+}
+
+h3 {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  letter-spacing: 0.15rem;
+}
+
+a {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
 section {
   height: 100vh;
+}
+
+@media (min-height: 540px) {
+
+  *,
+  ::before,
+  ::after {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1em;
+  }
+
+  a {
+    line-height: 2.875rem;
+  }
 }
