@@ -9,7 +9,7 @@
 ::after {
   color: #7284a6;
   font-family: 'Inter', sans-serif;
-  font-size: 13.3333px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 2em;
 }
@@ -46,16 +46,38 @@ a {
   text-transform: uppercase;
 }
 
+p {
+  margin-bottom: 0.75rem;
+}
+
 section {
   height: 100vh;
 }
 
 .hero {
-  height: 60vh;
+  height: 50vh;
+}
+
+.img_block {
+  height: 50vh;
 }
 
 .img_element {
-  height: 40vh;
+  bottom: 20%; 
+}
+
+.img_item {
+  transform: rotate(-45deg) translateX(10px);
+}
+@media (orientation: landscape) {
+  .img_block {
+    height: 100%;
+    margin: auto 0;
+  }
+}
+
+.about {
+  height: auto;
 }
 
 @media (min-width: 540px) {

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/wow.js"></script>
   <script>
-  new WOW().init()</script>
+    new WOW().init()</script>
 </head>
 
 <body class="relative bg-[#fff] wow">
@@ -44,17 +44,17 @@
     </nav>
   </header>
 
-  <main>
+  <main class="pt-20 relative">
 
-    <section class="hero pt-20 flex">
+    <section class="hero flex">
       <div class="wrapper flex py-[40px] px-[33px] h-full basis-full sm:justify-center">
         <div class="self-center">
-        <div class="block text-left sm:text-center wow fadeInUp">
-          <h1 class="mb-4 sm:mb-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Harshit Saini</h1>
-          <h3 class="mb-7 sm:mb-8 text-purple uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">entrepreneur</h3>
-        </div>
-        <div class="button text-left sm:text-center ">
-          <a class="
+          <div class="block text-left sm:text-center wow fadeInUp">
+            <h1 class="mb-4 sm:mb-4">Harshit Saini</h1>
+            <h3 class="mb-7 sm:mb-8 text-purple uppercase">entrepreneur</h3>
+          </div>
+          <div class="button text-left sm:text-center ">
+            <a class="
             inline-block 
             bg-gradient-to-t from-[#bcb0ee] via-purple to-[#bcb0ee]
             border-2 
@@ -65,42 +65,56 @@
             px-4 
             py-2 
             text-white">
-            Contact
-            with me
-          </a>
+              Contact
+              with me
+            </a>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
     <section class="about bg-[#fff]">
       <div class="container">
-        <div class="flex flex-col-reverse sm:flex-row">
-          <div class="wow bounceInUp" data-wow-duration="1s" data-wow-delay=".1s">
-            <h2>About me</h2>
-            <p>Harshit saini is a Hardcore entrepreneur, who has great experience in creating businesses from scratch,
+        <div class="flex flex-col-reverse md:flex-row md:py-[20px]">
+          <div class="py-4 md:py-4" data-wow-duration="1s" data-wow-delay=".1s">
+            <h2 class="pb-2 md:py-4">About me</h2>
+            <p class="md:pr-10">Harshit Saini is a hardcore entrepreneur, who has great experience in creating businesses from scratch,
               his quick response with speed and accuracy helps him to take decisions fast even in a panic situation
               rather than running around in circles which helps him to make decisions calmly and fast.
             </p>
-            <p>
-              Behind every decision, harshit used his own developed method of analysis which mostly he has learned from
+            <p class="md:pr-10">
+              Behind every decision, Harshit used his own developed method of analysis which mostly he has learned from
               his experience. His way of managing things is quite fascinating he can break down even the most complex
-              management into the most simple and minimalistic management which helps in making things more efficient
+              management into the most simple and minimality management which helps in making things more efficient
               and powerful.
             </p>
-            <p>
+            <p class="md:pr-10">
               He has his own methods of completing a task and he is a great believer of the fact that if you can't
               measure things you can't improve them. So he always sees himself on some level and on a stage so he can
               figure out how more betterment can be made.</p>
             <div>Support Unicorn Witnesses</div>
           </div>
-          <div class="img_element flex-none">
-              <div class="img_background"></div>
-              <picture class="flex justify-center">
-                <source media="(min-width: 1500px)" srcset="assets/img/harshit_saini_phote512.png, assets/img/harshit_saini_phote1024_2x.png 2x" height="512px" width="512px">
-                <img src="assets/img/harshit_saini_phote.png" srcset="assets/img/harshit_saini_phote2x.png 2x" loading="lazy" width="268px"
-                  height="268px" alt="Photo of Harshit Saini">
+          <div class="img_block flex justify-center items-center">
+            <div class="
+                img_element 
+                relative 
+                h-[268px] 
+                w-[268px] 
+                flex-none 
+                bg-gray-700 
+                rounded-[40%] 
+                overflow-hidden 
+                rotate-45
+                self-end
+            ">
+              <picture class="img_item absolute -bottom-[17px] flex justify-center z-1">
+                <source media="(min-width: 1500px)"
+                  srcset="assets/img/harshit_saini_phote512.png, assets/img/harshit_saini_phote1024_2x.png 2x"
+                  height="512px" width="512px">
+                <img src="assets/img/harshit_saini_phote.png" srcset="assets/img/harshit_saini_phote2x.png 2x"
+                  loading="lazy" width="268px" height="268px" alt="Photo of Harshit Saini">
               </picture>
+            </div>
           </div>
         </div>
       </div>

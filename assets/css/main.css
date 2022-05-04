@@ -527,6 +527,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.sticky{
+  position: sticky;
+}
+
 .inset-y-0{
   top: 0px;
   bottom: 0px;
@@ -544,12 +548,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.-bottom-\[17px\]{
+  bottom: -17px;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
 
 .mb-7{
   margin-bottom: 1.75rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .block{
@@ -580,12 +592,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.h-\[268px\]{
+  height: 268px;
+}
+
 .w-full{
   width: 100%;
 }
 
 .w-auto{
   width: auto;
+}
+
+.w-\[268px\]{
+  width: 268px;
 }
 
 .flex-1{
@@ -604,12 +624,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-basis: 100%;
 }
 
-.resize{
-  resize: both;
+.rotate-45{
+  --tw-rotate: 45deg;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.flex-row{
-  flex-direction: row;
+.resize{
+  resize: both;
 }
 
 .flex-col-reverse{
@@ -632,12 +654,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.self-end{
+  align-self: flex-end;
+}
+
 .self-center{
   align-self: center;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-\[40\%\]{
+  border-radius: 40%;
 }
 
 .border-2{
@@ -660,6 +694,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-purple{
   --tw-bg-opacity: 1;
   background-color: rgb(132 110 230 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-orange-300{
@@ -719,8 +758,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pt-20{
   padding-top: 5rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-left{
@@ -752,7 +800,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 ::after {
   color: #7284a6;
   font-family: 'Inter', sans-serif;
-  font-size: 13.3333px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 2em;
 }
@@ -789,16 +837,40 @@ a {
   text-transform: uppercase;
 }
 
+p {
+  margin-bottom: 0.75rem;
+}
+
 section {
   height: 100vh;
 }
 
 .hero {
-  height: 60vh;
+  height: 50vh;
+}
+
+.img_block {
+  height: 50vh;
 }
 
 .img_element {
-  height: 40vh;
+  bottom: 20%;
+}
+
+.img_item {
+  -webkit-transform: rotate(-45deg) translateX(10px);
+          transform: rotate(-45deg) translateX(10px);
+}
+
+@media (orientation: landscape) {
+  .img_block {
+    height: 100%;
+    margin: auto 0;
+  }
+}
+
+.about {
+  height: auto;
 }
 
 @media (min-width: 540px) {
@@ -834,10 +906,6 @@ section {
     margin-bottom: 2rem;
   }
 
-  .sm\:flex-row{
-    flex-direction: row;
-  }
-
   .sm\:items-stretch{
     align-items: stretch;
   }
@@ -857,6 +925,40 @@ section {
 
   .sm\:text-center{
     text-align: center;
+  }
+}
+
+@media (min-width: 720px){
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:py-\[\]{
+    padding-top: ;
+    padding-bottom: ;
+  }
+
+  .md\:py-\[20px\]{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .md\:pr-2{
+    padding-right: 0.5rem;
+  }
+
+  .md\:pr-10{
+    padding-right: 2.5rem;
   }
 }
 
