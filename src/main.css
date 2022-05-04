@@ -7,6 +7,7 @@
 *,
 ::before,
 ::after {
+  color: #7284a6;
   font-family: 'Inter', sans-serif;
   font-size: 13.3333px;
   font-weight: 200;
@@ -17,9 +18,10 @@ h1,
 h2,
 h3,
 h4 {
+  color: #314163;
   font-family: 'Sora', sans-serif;
   font-weight: 400;
-  line-height: 1.375em;
+  line-height: 130%;
 }
 
 h1 {
@@ -48,17 +50,29 @@ section {
   height: 100vh;
 }
 
-@media (min-height: 540px) {
+.hero {
+  height: 60vh;
+}
+
+.img_element {
+  height: 40vh;
+}
+
+@media (min-width: 540px) {
 
   *,
   ::before,
   ::after {
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1em;
   }
 
   a {
     line-height: 2.875rem;
+  }
+
+  .hero {
+    height: 100vh;
   }
 }
