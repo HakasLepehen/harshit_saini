@@ -527,10 +527,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.sticky{
-  position: sticky;
-}
-
 .inset-y-0{
   top: 0px;
   bottom: 0px;
@@ -558,10 +554,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-7{
   margin-bottom: 1.75rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .block{
@@ -701,14 +693,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.bg-orange-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
-}
-
 .bg-lime-400{
   --tw-bg-opacity: 1;
   background-color: rgb(163 230 53 / var(--tw-bg-opacity));
+}
+
+.bg-orange-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-t{
@@ -763,8 +755,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
-.pt-20{
-  padding-top: 5rem;
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .pb-2{
@@ -838,6 +835,7 @@ a {
 }
 
 p {
+  line-height: 1.45rem;
   margin-bottom: 0.75rem;
 }
 
@@ -847,6 +845,10 @@ section {
 
 .hero {
   height: 50vh;
+}
+
+.expectations {
+  height: auto;
 }
 
 .img_block {
@@ -933,28 +935,14 @@ section {
     flex-direction: row;
   }
 
-  .md\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .md\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .md\:py-\[\]{
-    padding-top: ;
-    padding-bottom: ;
-  }
-
   .md\:py-\[20px\]{
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-  .md\:pr-2{
-    padding-right: 0.5rem;
+  .md\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .md\:pr-10{

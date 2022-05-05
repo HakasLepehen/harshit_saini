@@ -47,6 +47,7 @@ a {
 }
 
 p {
+  line-height: 1.45rem;
   margin-bottom: 0.75rem;
 }
 
@@ -56,6 +57,10 @@ section {
 
 .hero {
   height: 50vh;
+}
+
+.expectations {
+  height: auto;
 }
 
 .img_block {
@@ -69,6 +74,7 @@ section {
 .img_item {
   transform: rotate(-45deg) translateX(10px);
 }
+
 @media (orientation: landscape) {
   .img_block {
     height: 100%;
